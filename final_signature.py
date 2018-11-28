@@ -123,7 +123,7 @@ def change_directory():
         label14.grid(row=17,column=2)
         filename = filedialog.askdirectory()
         list1=[filename]
-        df=pandas.DataFrame(data={"col1":list1})
+        df=pd.DataFrame(data={"col1":list1})
         df.to_csv("directory.csv",sep=',',index=False)         #saving current directory into csv file
         filename1 = filedialog.askdirectory()
         num=len(os.listdir(filename))
